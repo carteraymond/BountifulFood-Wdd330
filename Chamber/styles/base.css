@@ -5,7 +5,6 @@ header {
 	padding: 5px 0;
 	display: flex;
 	align-items: center;
-	justify-items: space-between;
 	max-width: 900px;
 	margin: 0 auto;
 	border-bottom: 1px solid #bbb;
@@ -54,16 +53,20 @@ nav {
 	max-width: 760px;
 	
 }
+
 .navigation {
 	list-style: none;
 	padding: 0;
 }
+
 .navigation li:first-child {
 	display: block;
 }
+
 .navigation li {
 	display: none;
 }
+
 .navigation a {
 	display: block;
 	padding: 0.75rem;
@@ -83,6 +86,7 @@ nav {
 	color: #F7B700;
 	background-color: #000376;
 }
+
 span.date {
 	display: block;
 	text-align: center;
@@ -90,6 +94,7 @@ span.date {
 	margin:5px;
 
 }
+
 .banner{
 	display: block;
 	text-align: center;
@@ -112,6 +117,7 @@ body {
 	margin: 0;
     background-color: #000376;
 }
+
 main {
 	background-color: #F7B700;
 	/* padding: 2em;
@@ -119,10 +125,12 @@ main {
 	
 
 }
+
 main div{
     padding: 0;
     margin: 0;
 }
+
 .hero {
     padding: 0;
 	margin:0;
@@ -145,6 +153,7 @@ footer {
     align-items: center;
     background-color: #F7B700;
 }
+
 footer img {
     width: 2em;  
     align-self: center;
