@@ -18,4 +18,11 @@ const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
+const dayOfWeek = new Intl.DateTimeFormat("en-US",{weekday:"long",}).format(now);
+if (dayOfWeek ==="Monday" || "Tuesday"){
+	const banner = document.createElement("div");
+	banner.className = "banner";
+	banner.innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+	document.body.insertBefore(banner,document.body.childNodes[0]);
+};
 datefield.innerHTML = `<em>${fulldate}</em>`;
