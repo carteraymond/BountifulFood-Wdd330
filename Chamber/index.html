@@ -24,7 +24,7 @@
 	
         <div class="logo">
             <picture>
-                <img src="images/Commerce.png" alt="Chamber of Commerce Logo">
+                <img src="images/Commerce.webp" alt="Chamber of Commerce Logo">
             </picture>
             <section class="headings">
                 <h1>Village of Lexington</h1>
@@ -71,7 +71,11 @@
     <span class="date">Time of Day</span>
     <main>
         <div class="hero">
-            <img id="Lexington" src="images/village.jpg" alt="The center of our village, Lexington">
+            <picture>
+                <source srcset="../Chamber/images/wdd230-org-medium.jpg" media="(min-width:500px) and (max-width:799px)">
+                <source srcset="../Chamber/images/wdd230-org-large.jpg" media="(min-width:800px)">
+                <img id="Lexington" src="images/wdd230-org-small.jpg" alt="The center of our village, Lexington" >
+            </picture>
         </div>
         <div class="news">This Weeks reports are showing no deaths, two house fires, which have been put out successfully, and no crimes committed. We hope to continue active meetings to ensure that we remain vigilant and alert of our surroundings to prevent furthur fires and injuries.</div>
         <div class="spot1">
@@ -100,7 +104,13 @@
         <div class="weather">
             <h3>Weather</h3>
             <img src="images/thunderstorm.png" alt="Thunderstorm">
-            <p>The Pigs sniffed the ground and hid in their shacks, so expect thunderstorms for the next couple of days.</p>
+            <p class="temp">
+                Temp: <input type="number" id="temperature" placeholder="<=50&deg;F" />
+              </p>
+              <p>
+                Wind Speed: <input type="number" id="windSpeed" placeholder=">3.0mph" />
+              </p>
+              <p>Wind Chill: <span id="windChill"></span></p>
         </div>
     </main>
     <footer>
@@ -110,5 +120,6 @@
         <span id="lastModified">copyright/name/WDD230 Project/Last Modified</span>
     </footer>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/windchill.js"></script>
 </body>
 
