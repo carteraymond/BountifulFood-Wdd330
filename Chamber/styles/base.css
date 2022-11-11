@@ -159,3 +159,14 @@ footer img {
     align-self: center;
 }
 
+/*Discover Page Specific Css*/
+div.picturesContainer picture img{
+	display:block;
+	
+}
+div.picturesContainer picture img:hover {box-shadow: 0 0 50px #F7B700;}
+div.picturesContainer p{
+	background-color: #F7B700;
+}
+
+
