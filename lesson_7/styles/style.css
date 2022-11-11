@@ -1,0 +1,28 @@
+
+body{
+    background-color: blanchedalmond;
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+img[data-src] {
+    filter: blur(0em);
+    transition: filter 0.5s;
+   
+  }
+
+img{
+display: block;
+margin-left: 30em;
+filter: blur(0.2em);
+
+
+
+    
+}
+
+
