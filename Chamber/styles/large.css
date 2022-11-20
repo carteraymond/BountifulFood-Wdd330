@@ -21,6 +21,26 @@
       margin-left: 1em;
       margin-right: 1em;
    }
+   main h1#join_title{
+      display: block;
+      text-align: center;
+      grid-column: 2/4;
+      grid-row: 1;
+   }
+   main h3#join_subtitle{
+      display: block;
+      text-align: center;
+      grid-column: 2/4;
+      grid-row: 1;
+      padding: 7%;
+   }
+   main form{
+      display: block;
+      text-align: center;
+      grid-column: 2/4;
+      grid-row: 1;
+      margin-top: 5em;
+   }
 
    .event {
       grid-column: 1/2;
