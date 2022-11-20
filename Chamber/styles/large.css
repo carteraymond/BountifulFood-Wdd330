@@ -21,7 +21,7 @@
       margin-left: 1em;
       margin-right: 1em;
    }
-   main h1#join_title{
+   main h2#join_title{
       display: block;
       text-align: center;
       grid-column: 2/4;
