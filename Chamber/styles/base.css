@@ -163,6 +163,8 @@ footer img {
 /*Discover Page Specific Css*/
 div.picturesContainer picture img{
 	display:block;
+	width: 300px;
+	height: auto;
 	
 }
 div.picturesContainer picture img:hover {box-shadow: 0 0 50px #F7B700;}
