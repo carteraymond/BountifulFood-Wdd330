@@ -17,7 +17,7 @@
    main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: 400px 400px 400px;
       margin-left: 1em;
       margin-right: 1em;
    }
@@ -55,6 +55,7 @@
    .join {
       grid-column: 1/2;
       grid-row: 3/4;
+      margin-top: 50%;
    }
 
    .hero {
@@ -64,8 +65,8 @@
 
    .news {
       grid-column: 2/4;
-      grid-row: 3/3;
-      margin-top: 0px;
+      grid-row: 1/2;
+      margin-top: 85%;
    }
 
    .spot1 {
