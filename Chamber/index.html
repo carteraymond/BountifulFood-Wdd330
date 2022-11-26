@@ -100,15 +100,24 @@
             <p>Please set time apart to help out Farmer Dan harvest crops before the pumpkin festival</p>
         </div>
         <div class="weather">
-            <h3>Weather</h3>
-            <img src="images/thunderstorm.png" alt="Thunderstorm">
-            <p class="temp">
-                Temp: <input type="number" id="temperature" placeholder="<=50&deg;F" >
-              </p>
-              <p>
-                Wind Speed: <input type="number" id="windSpeed" placeholder=">3.0mph" >
-              </p>
-              <p>Wind Chill: <span id="windChill"></span></p>
+            <p><strong>Weather Report</strong></p>
+            <section>
+                <div>
+                    <figure>
+                        <img src="../lesson_7/images/placeholder.jpg" alt="Weather Icon" id="weatherlogo" />
+                        <figcaption></figcaption>
+                      </figure>
+                </div>
+                <div>
+                    <span id="temperature"></span>
+                    <p id="currently"></p>
+                    <p>Wind Speed: <span id="windSpeed"></span></p>
+                    <p>
+                    Wind Chill: <span id="windChill"></span>
+                    </p>
+                </div>
+                
+            </section>
         </div>
     </main>
     <footer>
@@ -118,6 +127,6 @@
         <span id="lastModified">copyright/name/WDD230 Project/Last Modified</span>
     </footer>
     <script src="./scripts/script.js"></script>
-    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/weather.js"></script>
 </body>
 
