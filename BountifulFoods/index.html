@@ -27,7 +27,9 @@
                 <h1>Bountiful Foods</h1>
                 <q class="Slogan">The Freshest Fruits in the Golden Coast!</q>
             </section>
+            
         </div>
+        
         <nav>
             <ul class="navigation">
                 <li><a class="ham" href="#">&#9776;</a></li>
@@ -63,6 +65,7 @@
                             id="Logo__x2014__FIXED" style="fill:#fff;fill-rule:nonzero;" />
                     </g>
                 </svg></a>
+                
             <a href="https://linkedin.com"><svg height="32px"
                     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
                     viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -88,41 +91,39 @@
         <p>Find us at 555 Fruit Lane Carslbad, California<br>
             Call us at 555-253-8945<br> Email us at BountifulFoods@Gmail.com
         </p>
+        
 
     </header>
-    <main>
-        <div class="Summary">
+    <img class="lazy" id="fruitSpread1" src="./images/placeholder.jpg" data-src="./images/fruit-spread-min-1.jpg" alt="Fruit Spread banner">
+    
+    <main id="index">
+        <div class="summary">
             <h3>Carlsbad</h3>
             <p>Carlsbad is a popular tourist destination and home to many businesses in the golf industry.</p>
             <p>Population: 114,746</p>
             <p> Elevation: 52ft</p>
         </div>
         <div class="weather">
-            <p><strong>Weather Report</strong></p>
-            <section>
-                <div>
-                    <figure>
-                        <img src="../lesson_7/images/placeholder.jpg" alt="Weather Icon" id="weatherlogo">
-                        <figcaption></figcaption>
-                        <span id="temperature"></span>
-                        <p id="currently"></p>
-                        <p id="humidity"></p>
-                        <p>3-day Forecast</p>
-                        <span id="forecast"></span>
-                        <p>Weather information courtesy of openweathermap.org</p>
-                    </figure>
-                </div>
-            </section>
+            <h3>Weather Report</h3>
+            <img src="../lesson_7/images/placeholder.jpg" alt="Weather Icon" id="weatherlogo">
+            <p id="caption"></p>
+            <span id="temperature"></span>
+            <p id="currently"></p>
+            <p id="humidity"></p>
+            <p>3-day Forecast</p>
+            <span id="forecast"></span>
+            <p>Weather information courtesy of openweathermap.org</p>
         </div>
-        <div class="Fresh">
+        <div class="fresh">
             <p id="drink-counter">You have made no drinks!</p>
-            <a href="./fresh.html"> Make Your Drink Today!</a>
+            <a id="action-drink" href="./fresh.html"> Make Your Drink Today!</a>
         </div>
     </main>
+    
     <footer>
-        <img class="lazy footerlogo"src="./images/placeholder.jpg" data-src="./images/bountiful_foods_logo.jpg" alt="Company Logo">
         <span id="lastModified">copyright/name/WDD230 Project/Last Modified</span>
     </footer>
+    <img class="lazy" id="fruitSpread2" src="./images/placeholder.jpg" data-src="./images/fruit-spread-min-3.jpg" alt="Fruit Spread banner">
     <script src="./scripts/last_modified.js"></script>
     <script src="./scripts/lazyload.js"></script>
     <script src="./scripts/weather.js"></script>

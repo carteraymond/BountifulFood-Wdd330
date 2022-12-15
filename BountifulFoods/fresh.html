@@ -21,7 +21,8 @@
 
         <div class="logo">
             <picture>
-                <img class="lazy" src="./images/placeholder.jpg" data-src="./images/bountiful_foods_logo.jpg" alt="Bountiful Foods Logo">
+                <img class="lazy" src="./images/placeholder.jpg" data-src="./images/bountiful_foods_logo.jpg"
+                    alt="Bountiful Foods Logo">
             </picture>
             <section class="headings">
                 <h1>Bountiful Foods</h1>
@@ -90,52 +91,53 @@
         </p>
 
     </header>
-    <h2 id="join_title">Join our village online community!</h2>
+    <h2 id="join_title">Lets make your new favorite drink!</h2>
     <h3 id="join_subtitle">Please fill out this form below</h3>
-    <img class="lazy" src="./images/placeholder.jpg" data-src="./images/fruit-drink-banner-min.png" alt="Fruit Drink Spread"/>
-
+    <img class="lazy" id="fruit-drinks" src="./images/placeholder.jpg" data-src="./images/fruit-drink-banner-min.png" alt="Fruit Drink Spread">
     <div class="formContainer">
         <form id="form" onsubmit="return false">
-            <h2>Drink Designer</h2>
-            <hr>
             <fieldset>
-                <label class="top">Name* <input type="text" id="fname" name="fname" required></label>
-                <label class="top">Email*
-                    <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Cell phone number*
+                <label >Name* <input type="text" id="fname" name="fname" placeholder="Adam Appleseed" required></label>
+                <label >Email*
+                    <input type="email" id="email" name="email" placeholder="AdamAppleseed@gmail.com" required></label>
+                <label >Cell phone number*
                     <input type="tel" id="phone" name="phone" placeholder="1235551234" required></label>
-    
-                <label class="top">Select a fruit*
+                    <br>
+                <label >Select a fruit
                     <select name="Fruit1" id="fruit1" required>
                         <option value="">Fruit 1</option>
                     </select>
                 </label>
-                <label class="top">Select a fruit
-                    <select name="Fruit2" id="fruit2">
+                <label >Select a fruit
+                    <select name="Fruit2" id="fruit2" required>
                         <option value="">Fruit 2</option>
                     </select>
                 </label>
-                <label class="top">Select a fruit
-                    <select name="Fruit3" id="fruit3">
+                <label >Select a fruit
+                    <select name="Fruit3" id="fruit3" required>
                         <option value="">Fruit 3</option>
                     </select>
                 </label>
-                <label class="top">Special Instructions
+                <label >Special Instructions
                     <textarea name="instructions" id="instructions" rows="4" cols="23"></textarea>
                 </label>
+                <br>
                 <button id="submitForm" type="submit">Get Drink Info</button>
             </fieldset>
             <input type="text" id="drink-date" name="drink-date" hidden>
         </form>
-        <div>
+    </div>
+    <div id="drinks-grid-container">
+        <div id="user-drink">
             <h2>Your Drinks</h2>
             <hr>
             <div id="drink-list-inner-div">
                 <table id="userDrinks">
                 </table>
             </div>
+            <p id="drink-counter"></p>
         </div>
-        <div>
+        <div id="receipt">
             <h2>Drink Nutrition</h2>
             <hr>
             <table id="userDrinkReceipt">
@@ -143,7 +145,7 @@
                     <td>
                         <h2>Date</h2>
                     </td>
-                    <td id="drink-date-cell-id">
+                    <td id="drinkDate">
                         <p></p>
                     </td>
                 </tr>
@@ -215,14 +217,11 @@
                     </td>
                     <td id="drink-instructions"></td>
                 </tr>
-    
+
             </table>
         </div>
-
     </div>
-    </section>
     <footer>
-        <img class="lazy footerlogo"src="./images/placeholder.jpg" data-src="./images/bountiful_foods_logo.jpg" alt="Company Logo">
         <span id="lastModified">copyright/name/WDD230 Project/Last Modified</span>
     </footer>
     <script src="./scripts/last_modified.js"></script>

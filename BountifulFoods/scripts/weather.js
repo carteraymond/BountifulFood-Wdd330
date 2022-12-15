@@ -2,7 +2,7 @@
 const temperature = document.querySelector('#temperature');
 const description = document.querySelector('#currently');
 const weathericon = document.querySelector('#weatherlogo');
-const caption = document.querySelector('figCaption');
+const caption = document.querySelector('#caption');
 const humidity = document.querySelector("#humidity");
 const forecast = document.querySelector("#forecast");
 const apiKey = "4ce191c6f8d82ff7aa50f70affa03999";
@@ -25,7 +25,6 @@ async function apiFetch() {
   }
   
 apiFetch();
-//{"coord":{"lon":-84.497,"lat":38.0464},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":55.74,"feels_like":53.28,"temp_min":54.09,"temp_max":58.32,"pressure":1015,"humidity":48},"visibility":10000,"wind":{"speed":8.05,"deg":110},"clouds":{"all":0},"dt":1669493509,"sys":{"type":2,"id":2073151,"country":"US","sunrise":1669465837,"sunset":1669501225},"timezone":-18000,"id":4297983,"name":"Lexington","cod":200}
 
 function capitalize(string) {
   return `${string.charAt(0).toUpperCase()}${string.slice(1)}`;

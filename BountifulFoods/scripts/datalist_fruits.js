@@ -70,6 +70,7 @@ function calculateDrink() {
         drink_selection[cellPhone] = document.getElementById("phone").value;
         drink_selection[specialInstructions] = document.getElementById("instructions").value;
         const fruitSelectionList = [fruit1,fruit2, fruit3];
+
         fruitSelectionList.forEach((item) => {
 
             if (item.selectedIndex != 0) {
@@ -80,17 +81,23 @@ function calculateDrink() {
                 const currentSugar = currentFruit.nutritions.sugar;
                 const currentCalories = currentFruit.nutritions.calories;
                 
-                drink_selection[fruitNames] += currentFruit.name + " ";
+                drink_selection[fruitNames] += currentFruit.name + ", ";
                 drink_selection[carbohydrates] += (currentCarbs);
                 drink_selection[protein] += (currentProtein);
                 drink_selection[fat] += (currentFat);
                 drink_selection[sugar] += (currentSugar);
                 drink_selection[calories] += (currentCalories);
                 drink_selection[grams] += (100);
-
+            
+            }
+            else{
+                console.log(item);
+                console.log("item index error")
             }
         })
+
         let drinkList = localStorage.drinkList;
+
         if (drinkList != null) {
             drinkList = JSON.parse(drinkList);
             drinkList.push(drink_selection);
@@ -104,6 +111,9 @@ function calculateDrink() {
 
         loadDrinkTable();
         drinkTable.lastChild.click();
+    }
+    else{
+        console.log("slight error, something went wrong")
     }
 }
 
@@ -165,8 +175,7 @@ function loadNutritionData(value) {
     //     drinkNutritionTable.scrollIntoView({behavior: "smooth", block: "end"});
     // }
 
-    drinkDate = new Date(parseInt(drink[date])).toDateString();
-
+    drinkDate = new Date(parseInt(drink[9])).toDateString();
     //walk the current drink selection, add data to the table.
     document.getElementById("drink-fname").innerHTML = "<p>" + drink[userName] + "</p>";
     document.getElementById("drink-email").innerHTML = "<p>" + drink[email] + "</p>";
@@ -179,7 +188,7 @@ function loadNutritionData(value) {
     document.getElementById("drink-sugar").innerHTML = "<p>" + drink[sugar] + "</p>";
     document.getElementById("drink-calories").innerHTML = "<p>" + drink[calories] + "</p>";
     document.getElementById("drink-grams").innerHTML = "<p>" + drink[grams] +"<p>";
-    document.getElementById("drink-date").innerHTML = "<p>" + drinkDate +"<p>";
+    document.getElementById("drinkDate").textContent = drinkDate;
 
 }
 

@@ -15,15 +15,13 @@ const datefield = document.querySelector(".date");
 
     // initialize display elements
     const numDrinksDisplay = document.getElementById("drink-counter");
-
     // get the stored value in localStorage
     let numDrinks = localStorage.numDrinks
 
     // determine if this is the first visit or display the number of visits.
     if (numDrinks != undefined) {
-        numDrinksDisplay.innerText = numDrinks;
-
+        numDrinksDisplay.innerText = (`You have made ${numDrinks} Drinks with us`);
     } else {
-        numDrinksDisplay.innerText = 0;
+        numDrinksDisplay.innerText = (`You have made no Drinks with us`);
         localStorage.numDrinks = 0;
     }
