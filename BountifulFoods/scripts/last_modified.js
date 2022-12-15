@@ -12,3 +12,18 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 
 // select the elements to manipulate (output to)
 const datefield = document.querySelector(".date");
+
+    // initialize display elements
+    const numDrinksDisplay = document.getElementById("drink-counter");
+
+    // get the stored value in localStorage
+    let numDrinks = localStorage.numDrinks
+
+    // determine if this is the first visit or display the number of visits.
+    if (numDrinks != undefined) {
+        numDrinksDisplay.innerText = numDrinks;
+
+    } else {
+        numDrinksDisplay.innerText = 0;
+        localStorage.numDrinks = 0;
+    }

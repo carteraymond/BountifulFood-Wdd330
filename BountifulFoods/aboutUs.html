@@ -21,7 +21,7 @@
 
         <div class="logo">
             <picture>
-                <img src="images/bountiful_foods_logo.jpg" alt="Bountiful Foods Logo">
+                <img class="lazy" src="./images/placeholder.jpg" data-src="./images/bountiful_foods_logo.jpg" alt="Bountiful Foods Logo">
             </picture>
             <section class="headings">
                 <h1>Bountiful Foods</h1>
@@ -102,14 +102,14 @@
     <section id="Meet-Us">
         <h3>Meet the faces behind the counter</h3>
         <div class="ProfileCard">
-            <img class="ProfileImage"src="./images/placeholder.jpg" alt="Picture of Owner of BountifulFoods" />
+            <img class="ProfileImage lazy"src="./images/placeholder.jpg" data-src="./images/adam.jpg" alt="Picture of Owner of BountifulFoods" />
             <h4>Adam Appleseed - Owner</h4>
             <p>Born from downtown Carlsbad, John has always sought out for ways to help make humanity cleaner,
                 healthier, and happier. His determination and strategic business policies have pushed BountifulFoods
                 into the thriving store it is today.</p>
         </div>
         <div class="ProfileCard">
-            <img class="ProfileImage"src="./images/placeholder.jpg" alt="Picture of Co Owner of BountifulFoods" />
+            <img class="ProfileImage lazy"src="./images/placeholder.jpg" data-src="./images/eve.jpg" alt="Picture of Co Owner of BountifulFoods" />
             <h4>Eve Appleseed - Co Owner </h4>
             <p>Wife of Adam, She helped motivate Adam into creating BountifulFoods. Her degree in Business Managment
                 degree from BYU-I along wth some self-reliance books from her church organization gave her the skills
@@ -124,8 +124,9 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <footer>
-        <img src="./images/bountiful_foods_logo.jpg" alt="Company Logo">
+        <img class="lazy footerlogo"src="./images/placeholder.jpg" data-src="./images/bountiful_foods_logo.jpg" alt="Company Logo">
         <span id="lastModified">copyright/name/WDD230 Project/Last Modified</span>
     </footer>
     <script src="./scripts/last_modified.js"></script>
+    <script src="./scripts/lazyload.js"></script>
 </body>

@@ -21,7 +21,7 @@
 
         <div class="logo">
             <picture>
-                <img src="images/bountiful_foods_logo.jpg" alt="Bountiful Foods Logo">
+                <img class="lazy" src="./images/placeholder.jpg" data-src="./images/bountiful_foods_logo.jpg" alt="Bountiful Foods Logo">
             </picture>
             <section class="headings">
                 <h1>Bountiful Foods</h1>
@@ -115,13 +115,15 @@
             </section>
         </div>
         <div class="Fresh">
+            <p id="drink-counter">You have made no drinks!</p>
             <a href="./fresh.html"> Make Your Drink Today!</a>
         </div>
     </main>
     <footer>
-        <img src="./images/bountiful_foods_logo.jpg" alt="Company Logo">
+        <img class="lazy footerlogo"src="./images/placeholder.jpg" data-src="./images/bountiful_foods_logo.jpg" alt="Company Logo">
         <span id="lastModified">copyright/name/WDD230 Project/Last Modified</span>
     </footer>
-    <script src="./scripts/weather.js"></script>
     <script src="./scripts/last_modified.js"></script>
+    <script src="./scripts/lazyload.js"></script>
+    <script src="./scripts/weather.js"></script>
 </body>
