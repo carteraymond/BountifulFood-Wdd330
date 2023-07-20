@@ -1,2 +1,2 @@
 # BountifulFood-Wdd330
-A place for alley coding work for Web Development 
+This is a contiuous project that is for practcing Javascript, Html5, and Css. I plan to develop this as a ongoing process.
