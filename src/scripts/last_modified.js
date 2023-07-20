@@ -1,6 +1,6 @@
 document.querySelector(
 	"#lastModified"
-).textContent = `@ 2022 BountifulFoods | Carter Raymond | WDD230 Project | Last Modification: ${document.lastModified}`;
+).textContent = `@ 2023 BountifulFoods | Carter Raymond | WDD330 Project | Last Modification: ${document.lastModified}`;
 
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
